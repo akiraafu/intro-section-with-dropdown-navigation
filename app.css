@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Epilogue", sans-serif;
+}
+header {
+    display: flex;
+}
+.hamburger {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: scale(2.5);
+    margin-top: 6rem;
+    left: 48rem;
+    display: none;
+    cursor: pointer;
+}
+.btn-close {
+    width: 50px;
+    height: 50px;
+    transform: scale(2.2);
+    margin-top: 6rem;
+    display: none;
+    cursor: pointer;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.8rem;
+}
+.nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    padding: 0 1rem;
+}
+.nav div {
+    flex: 1;
+    text-align: right;
+}
+.user a {
+    padding: 0.8rem 1.2rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    transition: all 100ms ease-in-out;
+}
+.user a:hover {
+    border: 1px solid hsl(0, 0%, 8%);
+}
+.logo {
+    display: inline;
+    margin-left: 3rem;
+}
+.logoText {
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+li {
+    padding: 0 1rem;
+}
+.submenuImg {
+    display: inline-block;
+    padding: 0 0.5rem 1rem 0;
+}
+
+.hasSubmenu {
+    position: relative;
+    display: inline-block;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    width: 110%;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    color: hsl(0, 0%, 41%);
+    border-radius: 1rem;
+    padding: 1rem 0 0 0;
+}
+.submenu-2 li {
+    padding: 0.2rem 0 1rem 1rem;
+}
+
+.hasSubmenu:hover .submenu {
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 90vh;
+    padding: 0 10rem;
+    margin-bottom: 7rem;
+}
+.mobileImg {
+    display: none;
+}
+.left {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5rem;
+}
+h1 {
+    font-size: 4rem;
+    margin: 5rem 0 3rem 0;
+}
+.title-mobile {
+    display: none;
+}
+.container .left p {
+    width: 26rem;
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 3rem;
+    font-weight: lighter;
+}
+.btn {
+    width: 5.7rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    padding: 1rem 2rem;
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 28rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 456px) {
+    .logoText {
+        font-size: 3.5rem;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 40rem;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -70%;
+        z-index: 2;
+        background-color: white;
+        color: hsl(0, 0%, 41%);
+        font-size: 2.5rem;
+    }
+    .btn-close {
+        position: fixed;
+        z-index: 4;
+        right: 3rem;
+    }
+    .nav-list {
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-list li {
+        margin: 50px 20px;
+    }
+    .nav-list li a {
+        color: hsl(0, 0%, 41%);
+    }
+    .nav-list li svg {
+        transform: scale(2.5);
+        margin: 0 0 0.5rem 1rem;
+    }
+    .user {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem 0;
+    }
+    .user a {
+        width: 400px;
+        text-align: center;
+        color: hsl(0, 0%, 41%);
+        margin-top: 1rem;
+        padding: 2rem;
+    }
+
+    .mobileImg {
+        display: block;
+        justify-content: center;
+        transform: scale(1.6);
+        margin-top: 10rem;
+    }
+
+    h1 {
+        display: none;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 110%;
+        margin-top: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-mobile {
+        display: inline-block;
+        width: 130%;
+        font-size: 6rem;
+        text-align: center;
+        margin: 12rem 0 3rem 0;
+    }
+    .container .left p {
+        width: 100%;
+        justify-content: center;
+        font-size: 2.3rem;
+        line-height: 1.5;
+    }
+    .btn {
+        width: 12rem;
+        background: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        font-size: 2rem;
+        padding: 2rem 2rem 2rem 3.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        transform: scale(1.5);
+    }
+
+    .right {
+        display: none;
+    }
+
+    .attribution {
+        display: none;
+    }
+} ;
