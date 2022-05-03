@@ -181,7 +181,7 @@ h1 {
         position: fixed;
         top: 0;
         right: -70%;
-        z-index: 2;
+        z-index: 3;
         background-color: white;
         color: hsl(0, 0%, 41%);
         font-size: 2.5rem;
@@ -207,6 +207,9 @@ h1 {
         transform: scale(2.5);
         margin: 0 0 0.5rem 1rem;
     }
+    .submenu {
+        float: none;
+    }
     .user {
         width: 100%;
         display: flex;
@@ -220,6 +223,10 @@ h1 {
         color: hsl(0, 0%, 41%);
         margin-top: 1rem;
         padding: 2rem;
+    }
+    .user a:nth-child(2) {
+        border: 1px solid hsl(0, 0%, 8%);
+        border-radius: 1rem;
     }
 
     .mobileImg {

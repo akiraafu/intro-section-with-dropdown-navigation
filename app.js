@@ -6,13 +6,13 @@ const submenu = document.querySelector(".submenu");
 const hasSubmenu = document.querySelector(".hasSubmenu");
 
 hamburger.addEventListener("click", () => {
-    nav.style.right === "-70%";
+    // nav.style.right === "-70%";
     nav.style.right = "0";
     closeBtn.style.display = "block";
 });
 
 closeBtn.addEventListener("click", () => {
-    nav.style.right === "0";
+    // nav.style.right === "0";
     nav.style.right = "-70%";
     closeBtn.style.display = "none";
 });
