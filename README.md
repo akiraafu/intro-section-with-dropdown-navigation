@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [https://github.com/akiraafu/intro-section-with-dropdown-navigation]
--   Live Site URL: [https://htmlpreview.github.io/?https://github.com/akiraafu/intro-section-with-dropdown-navigation/blob/122a773e0524e07e3f512b08833475bbd4339ea7/index.html]
+-   Live Site URL: [https://htmlpreview.github.io/?https://github.com/akiraafu/intro-section-with-dropdown-navigation/blob/dd6f4f04b3184a8abe5e972c9a7eb79c0e754df8/index.html]
 
 ## My process
 
