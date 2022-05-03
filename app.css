@@ -52,6 +52,10 @@ header {
 .user a:hover {
     border: 1px solid hsl(0, 0%, 8%);
 }
+.user a:nth-child(2) {
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 1rem;
+}
 .logo {
     display: inline;
     margin-left: 3rem;
